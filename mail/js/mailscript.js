@@ -9,15 +9,19 @@ console.log(emails);
 emailsLength = emails.length;
 console.log(emailsLength);
 
-let userEmail = prompt ("Qual è la tua email");
+const userEmail = prompt ("Qual è la tua email");
 
-for (let i = 0; i < emailsLength; i++) {
+let found = false;
 
+for (let i = 0; i < emails.length; i++) {
+    
 
-    if (userEmail = (emails[i])) {
-        console.log(userEmail);
-    } else {
-        console.log(emails[i]);
-    }
-}
+    if (userEmail == emails [i]) {
+        
+        found = true;
+        console.log("puoi entrare");
+    } 
 
+}    
+
+console.log(found);
