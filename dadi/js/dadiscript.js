@@ -9,8 +9,17 @@ console.log("il punteggio del computer è " + randComp);
 
 if (randUser > randComp) {
     console.log("L'utente vince.");
+    const userWins = document.querySelector(".container");
+    userWins.innerHTML = "<h1>L'UTENTE VINCE</h1>"
+
 } else if (randComp > randUser) {
     console.log("Il computer vince.");
+    const compWins = document.querySelector(".container");
+    compWins.innerHTML = "<h1>IL COMPUTER VINCE</h1>"
+
 } else {
     console.log("E' un pareggio.");
+    const tie = document.querySelector(".container");
+    tie.innerHTML = "<h1>E' UN PAREGGIO</h1>"
 }
+
